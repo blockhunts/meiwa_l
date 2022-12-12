@@ -11,14 +11,14 @@
             <div class="grid gap-6">
                 <!-- Email Address -->
                 <div class="space-y-2">
-                    <x-label for="email" :value="__('Email')" />
+                    <x-label for="user_code" :value="__('User Code')" />
 
                     <x-input-with-icon-wrapper>
                         <x-slot name="icon">
                             <x-heroicon-o-mail aria-hidden="true" class="w-5 h-5" />
                         </x-slot>
-                        <x-input withicon id="email" class="block w-full" type="email" name="email"
-                            :value="old('email')" placeholder="{{ __('Email') }}" required autofocus />
+                        <x-input withicon id="user_code" class="block w-full" type="text" name="user_code"
+                            :value="old('user_code')" placeholder="{{ __('User Code') }}" required autofocus />
                     </x-input-with-icon-wrapper>
                 </div>
 
