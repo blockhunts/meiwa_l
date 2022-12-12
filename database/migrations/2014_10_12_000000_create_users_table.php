@@ -21,8 +21,8 @@ return new class extends Migration
             $table->boolean('retire')->default(0);
             $table->string('email')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->foreignId('user_access_level_id')->constrained()->nullable();
-            $table->foreignId('department_id')->constrained()->nullable();
+            $table->foreignId('user_access_level_id')->nullable();
+            $table->foreignId('department_id')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->rememberToken();
