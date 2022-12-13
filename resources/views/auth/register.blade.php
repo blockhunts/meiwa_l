@@ -24,7 +24,7 @@
                     <x-label for="user_code" :value="__('User Code')" />
                     <x-input-with-icon-wrapper>
                         <x-slot name="icon">
-                            <x-heroicon-o-user aria-hidden="true" class="w-5 h-5" />
+                            <x-heroicon-o-user-circle aria-hidden="true" class="w-5 h-5" />
                         </x-slot>
                         <x-input withicon id="user_code" class="block w-full" type="text" name="user_code" :value="old('user_code')"
                             required autofocus placeholder="{{ __('User Code') }}" />

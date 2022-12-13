@@ -9,7 +9,7 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="grid gap-6">
-                <!-- Email Address -->
+                <!-- User Code -->
                 <div class="space-y-2">
                     <x-label for="user_code" :value="__('User Code')" />
 
