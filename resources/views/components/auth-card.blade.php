@@ -1,7 +1,7 @@
 <main class="flex flex-col items-center flex-1 px-4 pt-6 sm:justify-center">
     <div>
         <a href="/">
-            <x-application-logo class="w-20 h-20" />
+            <x-icon-meiwa class="relative text-white fill-black w-32 h-32" aria-hidden="true"/>
         </a>
     </div>
 

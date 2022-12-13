@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cf59d81412da079af5eeefd0531f2ad",
+    "content-hash": "9985b536911cc6fee52f98bfc935cc8b",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
