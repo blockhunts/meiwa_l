@@ -6,21 +6,21 @@
         </x-slot>
     </x-sidebar.link>
 
-    <x-sidebar.link title="社員パフォーマンス" href="{{ route('dashboard') }}" :isActive="request()->routeIs('performance')">
+    <x-sidebar.link title="社員パフォーマンス" href="{{ route('performance') }}" :isActive="request()->routeIs('performance')" >
         <x-slot name="icon">
             <x-icon-performance class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
     </x-sidebar.link>
 
-    <x-sidebar.link title="生産管理システム(古)" href="{{ route('meiwa.production') }}" :isActive="true">
+    <x-sidebar.link title="生産管理システム(古)" href="{{ route('meiwa.production') }}" :isActive="false">
         <x-slot name="icon">
-            <x-icon-performance class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            <x-bi-box-arrow-up-left class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
     </x-sidebar.link>
 
-    <x-sidebar.link title="マスタ管理(古)" href="{{ route('meiwa.master') }}" :isActive="true">
+    <x-sidebar.link title="マスタ管理(古)" href="{{ route('meiwa.master') }}" :isActive="false">
         <x-slot name="icon">
-            <x-icon-performance class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            <x-bi-box-arrow-up-left class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
     </x-sidebar.link>
 
