@@ -23,20 +23,20 @@
     @livewireStyles
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js' ,  'node_modules/flowbite/dist/flowbite.js' , 'node_modules/flowbite/dist/datepicker.js'])
 </head>
 
 <body class="font-sans antialiased text-gray-900 dark:text-gray-200">
-    
+
     <div x-data="mainState" :class="{ dark: isDarkMode }" @resize.window="handleWindowResize" x-cloak>
         <x-banner />
-        
+
         <div class="min-h-screen text-gray-900 bg-gray-100 dark:bg-dark-eval-0 dark:text-gray-200">
             <!-- Sidebar -->
             <x-sidebar.sidebar />
 
             <!-- Page Wrapper -->
-            <div class="flex flex-col min-h-screen" :class="{ 
+            <div class="flex flex-col min-h-screen" :class="{
                     'lg:ml-64': isSidebarOpen,
                     'md:ml-16': !isSidebarOpen
                 }" style="transition-property: margin; transition-duration: 150ms;">
@@ -48,14 +48,14 @@
                 <!-- Page Heading -->
                 @if (isset($header))
                     <header>
-                        <div class="px-4 py-6 mx-auto max-w-7xl w-full sm:px-6 lg:px-8">
+                        <div class="px-4 py-6 mx-auto max-w-8xl w-full sm:px-6 lg:px-8">
                             {{ $header }}
                         </div>
                     </header>
                 @endif
 
                 <!-- Page Content -->
-                <main class="flex-1 p-4 mx-auto max-w-7xl w-full sm:p-6 lg:p-8">
+                <main class="flex-1 p-4 mx-auto max-w-8xl w-full sm:p-6 lg:p-8">
                     {{ $slot }}
                 </main>
 
